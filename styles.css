@@ -260,6 +260,89 @@ button:hover {
   display: none;
 }
 
+/* === TRACK RESULT (mode Lagu) === */
+.track-result {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+}
+
+.track-info-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.track-info-head {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.track-album-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #1f2937;
+  flex-shrink: 0;
+}
+
+.track-info-meta {
+  flex: 1;
+}
+
+.track-info-label {
+  margin: 0 0 4px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
+.track-info-card h2 {
+  margin: 0 0 4px;
+  font-size: 1.4rem;
+}
+
+.track-album-label {
+  font-size: 0.88rem;
+}
+
+.track-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0 8px;
+}
+
+.track-stat {
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.track-lastfm-link {
+  color: var(--accent-2);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 840px) {
+  .track-result {
+    grid-template-columns: 1fr;
+  }
+
+  .track-info-head {
+    flex-direction: column;
+  }
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;

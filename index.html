@@ -38,6 +38,7 @@
 
     <section id="status" class="status" aria-live="polite"></section>
 
+    <!-- Tampilan mode ARTIS -->
     <section id="result" class="result hidden" aria-live="polite">
       <article class="artist-card">
         <div class="artist-head">
@@ -69,6 +70,48 @@
 
         <h3>Similar Artists</h3>
         <ul id="similarArtists" class="track-list similar-list"></ul>
+      </article>
+    </section>
+
+    <!-- Tampilan mode LAGU -->
+    <section id="trackResult" class="track-result hidden" aria-live="polite">
+      <article class="track-info-card">
+        <div class="track-info-head">
+          <img id="trackAlbumImage" src="" alt="Cover album" class="track-album-image hidden" />
+          <div class="track-info-meta">
+            <p class="track-info-label">Judul Lagu</p>
+            <h2 id="trackTitle">-</h2>
+            <p id="trackArtistName" class="muted"></p>
+            <p id="trackAlbumName" class="muted track-album-label"></p>
+            <div class="track-stats-row">
+              <span id="trackListeners" class="track-stat"></span>
+              <span id="trackPlaycount" class="track-stat"></span>
+              <span id="trackDuration" class="track-stat"></span>
+            </div>
+            <a id="trackLink" href="#" target="_blank" rel="noopener noreferrer" class="track-lastfm-link">Lihat di Last.fm</a>
+          </div>
+        </div>
+
+        <div class="pill-row">
+          <span class="pill-title">Tag / Genre</span>
+          <div id="trackTagList" class="pill-list"></div>
+        </div>
+
+        <div class="bio-wrap">
+          <h3>Deskripsi Lagu</h3>
+          <p id="trackWiki">-</p>
+        </div>
+      </article>
+
+      <article class="track-card">
+        <h3>Top Tracks — Artis Ini</h3>
+        <ol id="artistTopTracksForTrack" class="track-list"></ol>
+
+        <h3>Album</h3>
+        <p id="trackAlbumDetail" class="muted" style="padding-left:4px">-</p>
+
+        <h3>Artis Serupa</h3>
+        <ul id="trackSimilarArtists" class="track-list similar-list"></ul>
       </article>
     </section>
   </main>
